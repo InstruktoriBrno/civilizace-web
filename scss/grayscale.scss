@@ -154,7 +154,8 @@ a {
 
   width: 100%;
   height: auto;
-  padding: 200px 0;
+  // padding: 200px 0;
+  padding: 0 0;
 
   text-align: center;
 
@@ -165,6 +166,8 @@ a {
   background-size: cover;
   .intro-body {
     display: table-cell;
+    max-height: 100vh;
+    // overflow: hidden;
 
     vertical-align: middle;
     .brand-background {
@@ -179,7 +182,7 @@ a {
       font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       font-size: 20px;
-      text-align: justify;
+      // text-align: justify;
       margin: 20 0;
     }
   }
@@ -220,7 +223,7 @@ a {
 .about-section {
   background-color: rgba(#4a3a21, 0.6);
   p {
-    text-align: justify;
+    // text-align: justify;
   }
   .finish {
     font-size: 35px;
@@ -258,7 +261,7 @@ a {
 }
 
 .content-section {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 100px;
 }
 
@@ -357,7 +360,7 @@ ul.banner-social-buttons {
     margin: 0;
   }
   p {
-    text-align: justify;
+    // text-align: justify;
   }
 }
 
@@ -422,4 +425,61 @@ img::-moz-selection {
 
 .column-mamut {
   flex: 0;
+}
+
+#introCarousel {
+  height: 100vh;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.carousel-indicators li {
+  height: 20px;
+  width: 50px;
+}
+
+.carousel-img {
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  border-radius: 5px;
+  color: #000000;
+
+  background-color: #fcfcfc7c;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item h5 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  @media(min-width:992px) {
+    font-size: 60px;
+  }
+}
+
+.carousel-item p {
+  font-family: Cabin,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  @media(min-width:992px) {
+    font-size: 40px;
+  }
+}
+
+#mamut {
+  margin-left: auto;
+  margin-right: auto;
 }
