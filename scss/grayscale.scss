@@ -442,8 +442,11 @@ img::-moz-selection {
 }
 
 .carousel-img {
-  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-width: 120%;
   min-height: 100vh;
+  max-height: 110%;
   object-fit: cover;
 }
 
@@ -482,4 +485,9 @@ img::-moz-selection {
 #mamut {
   margin-left: auto;
   margin-right: auto;
+}
+
+.carousel-wrapper {
+  width: 100vw;
+  height: 100;
 }
