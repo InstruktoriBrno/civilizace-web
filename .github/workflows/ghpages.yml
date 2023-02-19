@@ -20,10 +20,12 @@ jobs:
           npm install --silent
           npx gulp build
           touch .nojekyll
+          rm .gitignore
       - name: Deploy to GH Pages
         if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
+          folder: .
           single-commit: true
 
