@@ -1,0 +1,29 @@
+name: "Build GH pages"
+on:
+  push:
+  pull_request:
+jobs:
+  build_and_update:
+    name: "Build"
+    runs-on: ubuntu-20.04
+    environment: github-pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            nodejs npm
+      - name: Build
+        run: |
+          npm install --silent
+          npx gulp build
+          touch .nojekyll
+      - name: Deploy to GH Pages
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          single-commit: true
+
