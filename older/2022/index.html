@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Civilizace: Od jiskry po páru</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/mamut.png" />
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Civilizace: Od jiskry po páru</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#info">Praktické info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#application">Přihláška</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Tým</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Ročníky</a>
+                        <div id="years" class="dropdown-menu"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+        <div class="intro-body">
+            <div id="introCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#introCarousel" data-slide-to="1"></li>
+                  <li data-target="#introCarousel" data-slide-to="2"></li>
+                  <li data-target="#introCarousel" data-slide-to="3"></li>
+                  <li data-target="#introCarousel" data-slide-to="4"></li>
+                  <li data-target="#introCarousel" data-slide-to="5"></li>
+                  <li data-target="#introCarousel" data-slide-to="6"></li>
+                  <li data-target="#introCarousel" data-slide-to="7"></li>
+                  <li data-target="#introCarousel" data-slide-to="8"></li>
+                  <li data-target="#introCarousel" data-slide-to="9"></li>
+                  <li data-target="#introCarousel" data-slide-to="10"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/mapatma.jpg" alt="First slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <h5>Příběh Civilizace</h5>
+                        <p>Nacházíte se v době temna.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/burty.jpg" alt="Second slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Přestaňte se živit primitivními postupy!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/vesnice.jpg" alt="Third slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Založte svoji první osadu.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/kladivo.jpg" alt="Fourth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Vymýšlejte převratné technologie.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/techlist.jpg" alt="Fifth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Možností máte spousty ...</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/techtree.jpg" alt="Sixth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>... ale kterou vyberete jako první?</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/zetonobchod.jpg" alt="Seventh slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Budete obchodovat?</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/zetonhrst.jpg" alt="Eighth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Nebo raději hromadit zásoby na horší časy?</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/kaluz.jpg" alt="Ninth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Ať už vyberete jakoukoliv cestu ...</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/kostky.jpg" alt="Tenth slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <p>Bude to stát za to!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block carousel-wrapper"><img class="d-block carousel-img" src="img/intro/timan.jpg" alt="Eleventh slide"></div>
+                    <div class="carousel-caption d-sm-block">
+                        <h5>Příběh Civilizace</h5>
+                        <p><a class="navbar-brand js-scroll-trigger" href="#about" style="color: black; font-size: inherit;">↓ Pojeďte s námi! ↓</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="brand-heading">Civilizace: Od jiskry po páru</h1>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/ostepy.png" id="ostepy" class="user-image">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <p>Příběh civilizace je víkendová akce, kde se svým týmem
+                    povedete svůj lid od první vykřesané jiskry až k zasyčení parního stroje, které ohlašuje začátek nového věku.
+                    A bude na vás, jakými cestami se vydáte. Od pátku
+                    do neděle bude probíhat strategická metahra, ve které
+                    budujete vlastní kulturu, zažíváte radost z objevování a
+                    rozvoje. Tato strategie je inspirovaná počítačovou hrou
+                    Civilizace od Sida Meiera.</p>
+
+                    <p>Ovšem na rozdíl od této legendární hry neprosedíte celý
+                    víkend před obrazovkou počítače. Příběh civilizace probíhá
+                    nad mapou i v terénu. Čekají vás chvíle strategického
+                    plánování i události plné pohybu.</p>
+
+                    <p>Proč používáme pojem metahra? Protože kromě strategického
+                    rozhodování váš tým musí hledat ložiska surovin, plnit úkoly
+                    přinášející nové technologie, budovat
+                    infrastrukturu atd. A samozřejmě, čím rozvinutější
+                    civilizace, tím víc možností a výzev. Hra není určená pouze
+                    pro kované stratégy. Historie nás učí, že úspěch každé
+                    civilizace závisí i na schopných konstruktérech, obratných
+                    diplomatech, zdatných obchodnících i pracovitých řemeslnících.
+                    Pokrok není zadarmo a musí být podložen úsilím celého
+                    týmu.</p>
+
+                    <p>Konečný výsledek a podoba vaší civilizace bude záležet na
+                    vás, na vaší vynalézavosti, dovednostech a rozhodnutích.
+                    Pokud vás Příběh civilizace láká, tak se
+                    přihlaste se svým týmem. Těšíme se na společnou cestu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info-section content-section">
+        <div class="container">
+            <div class="row">
+                <img src="img/mamut.png" id="maso" class="user-image">
+            </div>
+            <div class="row row-info">
+                <div class="column column-info col-md-12 mx-auto">
+                    <h2>Praktické informace</h2>
+                    <p>Akce proběhne 17.&mdash;19. června 2022 u obce Smrk
+                    (Třebíč) pokud to situace s COVID-19 dovolí. Akce se bude
+                    účastnit osm čtyřčlenných týmů. Akce je určena pro účastníky
+                    starších 18 let.</p>
+
+                    <p>Účastnický poplatek je 5200&nbsp;Kč za tým.</p>
+
+                    <p>Ubytování na akci je ve vlastních stanech, v ceně je
+                    zahrnuta strava 5x denně a materiál na přípravu této
+                    akce.</p>
+
+                    <p>Organizátoři jsou dobrovolníci a pořádají akci bez nároku
+                    na odměnu.</p>
+
+                    <h2>Storno podmínky</h2>
+                    <p>V případě zrušení akce ze strany orgnizátorů (např. z
+                    důvodu nepříznivé epidemiologické situace) vracíme celý účastnický poplatek.</p>
+                    <p>Ve všechno ostatních případech vracíme:
+                        <ul>
+                            <li><p>70 % účastnického poplatku (odhlášení více než 30 dní před akcí)</p></li>
+                            <li><p>50 % účastnického poplatku (odhlášení 30 až 10 dní před akcí)</p></li>
+                            <li><p>10 % účastnického poplatku (odhlášení 9 až 1 den před akcí)</p></li>
+                            <li><p>Nevracíme nic (odhlášení v den započetí akce)</p></li>
+                        </ul>
+                    </p>
+
+                    <h2>FAQ</h2>
+                    <h4>To budeme celou dobu hrát jenom tu strategii?</h4>
+                    <p>Nebudete. Hra je provázaná s dalšími programy a aktivitami.</p>
+
+                    <h4>Je potřebná znalost počítačové hry Civilizace?</h4>
+                    <p>Není.</p>
+
+                    <h4>Mohu se přihlásit jako jednotlivec?</h4>
+                    <p>Přihlásit na akci se můžete pouze jako 4-členný tým.
+                        Pro zájemce jsme  připravili <a href="https://docs.google.com/spreadsheets/d/1vyPv8lnOTN4Mkefm1TdJiyahha0phpYQ66R0ZkSkMJA/edit?usp=sharing">tabulku</a>, kde můžete zkusit sehnat další členy do týmu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="application-section content-section">
+        <div class="container">
+            <div class="row">
+                <div class="column column-info col-lg-12 mx-auto">
+                    <h2>Přihláška</h2>
+                    <p>
+                        Všechna místa na Příběh civilizace jsou už obsazená.
+                        <!-- Pro přihlášení vašeho týmu na Civilizaci klikněte na <a href="https://forms.gle/34DC1b6CaxHrT6LKA" target="_blank">tento link</a>.-->
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/maso.png" id="maso" class="user-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2>Tým</h2>
+                </div>
+            </div>
+
+            <div class="row-centered text-center org d-flex align-items-start flex-wrap">
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/maara.jpg" alt="">
+                    <h3>Jiří "Maara" Marek</h3>
+                    <p>Za největší vynález v historii lidstva považuju kolo. Dnes to vypadá jako samozřejmost, ale když se nad tím zamyslíte, tak v té době neexistovalo nic, co by se točilo. Podle mě to musel být geniální nápad.</p>
+                    <p>A když bych si mohl vybrat, chtěl bych si vylkoušet žít v odobí po druhé světové válce, někde ve velkém městě v USA. Byl to právem hrdý stát, a ta motivace byla znát i na míře jejich technologického pokroku.</p>
+                    <p>Navíc, tehdy neexistovaly mobily, takže lidi ještě museli přemýšlet.</p>
+
+                </div>
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/kuba.jpg" alt="">
+                    <h3>Kuba Streit</h3>
+                    <p>Vynález, bez kterého by se nám nežilo tak dobře?
+                    Knihtisk. Za prvé umožnil šíření vzdělanosti mezi širokou
+                    veřejnost a tím vznik nespočtu dalších vynálezů. A za druhé
+                    umožnil sdílet příběhy [od] zajímavých lidí, ať už fiktivní,
+                    či reálné.</p>
+
+                    <p>Kdybych nežil teď, chtěl bych žít teď, protože nikdy dřív
+                    jsme se nejspíš neměli tak dobře. Navíc, každou dřívější
+                    dobu si idealizujeme a žít v ní by určitě nebylo tak snadné,
+                    jak se nám může zdát.</p>
+                    <p>A pozdější doba? Té brzké nevěřím a přizpůsobit se té vzdálené by mohlo dát dost zabrat.</p>
+                </div>
+            </div>
+
+            <div class="row-centered text-center org d-flex align-items-start flex-wrap">
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/honza.jpg" alt="">
+                    <h3>Honza Mrázek</h3>
+                    <p>Přemýšlel jsi někdy o tam, jak je tranzistor důležitý objev? Podívej se na libovolný předmět kolem tebe. Pokud to není svíčka z včelího vosku, tak byl pravděpodobně vyroben strojem řízeným počítačem, který je poskládaný z tranzistorů.</p>
+                    <p>S tím se pojí druhá věc - mám pocit, že většina lidí jsou málo líní a málo si snaží svou práci usnadnit pomocí vynálezů.</p>
+                    <p>Kdybych nežil teď, zajímalo by mě, jak bude svět vypadat za 100 let.</p>
+                </div>
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/efka.jpg" alt="">
+                    <h3>Eva "Efka" Pavloušková</h3>
+                    <p>Nejlepším vynálezem lidstva je pro mě stále toaletní papír. Dostal se sice do křížku se zubním kartáčkem, ale nakonec vyhrál toaletní papír.</p>
+                    <p>Ve společnosti mi chybí staromódní gentlemani a pravé lady jako ze Saturnina.</p>
+                    <p>Kdybych si mohla vybrat, chtěla bych žít v té době. Na jednu stranu tam kavalírství ještě nevymřelo, na stranu druhou je to už doba plná vynálezů a pokroku, který žití usnadňoval a dopřával i možnost odpočinku.</p>
+                </div>
+            </div>
+
+            <div class="row-centered text-center org d-flex align-items-start flex-wrap">
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/heno.jpg" alt="">
+                    <h3>Henrich "Heňo" Lauko</h3>
+                    <p>Za prevratný vynález považujem umývačku na riad. Viete si predstaviť koľkým
+                    hádkam o špinavom riade taká umývačka zabráni. Mnohý jej môžeme byť vďačný za
+                    spokojnú domácnosť.</p>
+
+                    <p>V spoločnosti mi chýba altruizmus, ktorý pomáha rozvijať celú komunitu.
+                    Súdržnosť vždy priala pokroku.</p>
+
+                    <p>Občas si vravím aký bude život po doktoráte, a koľko súčastného výskumu
+                    posúva našu civilizáciu niekam ďalej, a koľko zaujímavých výskumov si nikto
+                    nikdy nevšimne.</p>
+                </div>
+                <div class="col-lg-6 col-centered">
+                    <img class="rounded-circle" src="img/stouri.jpg" alt="">
+                    <h3>Honza "Štouri" Štourač</h3>
+                    <p>Za převratný vynález považuji jednoznačně počítač. I přes
+                    všechny stinné stránky mě dosud nepřestává fascinovat, jak
+                    pár řádků kódu dokáže ušetřit roky práce spousty lidí.</p>
+
+                    <p>V dnešním světě mi začíná chybět rozmanitá příroda. Zatím
+                    ještě máme čas, ale hodně se děsím momentu, kdy už nebudou
+                    prakticky žádné skutečné lesy.</p>
+
+                    <p>Nejvíce bych si chtěl zkusit život v některém z
+                    následujících století a zažít si pocit mých praprarodičů při
+                    prvním pohledu na mobil. Dnešní věda i společnost letí
+                    šíleně rychle kupředu a tak jsem zvědavý, co všechno ještě
+                    dokážeme vymyslet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Kontakt</h2>
+
+                    <p>Pokud máš jakýkoli dotaz, neváhej se nám ozvat:
+                        <p class="contact-email">civilizace@instruktori.cz</p>
+                        <!-- <p>Sdílej tuto akci na Facebooku.</p>
+                        <ul class="list-inline banner-social-buttons">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/events/2186091201677878" class="btn btn-default btn-lg">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                    <span class="network-name">Facebook</span>
+                                </a>
+                            </li>
+                        </ul> -->
+                        <a href="http://www.instruktori.cz/"><img id="footer-sova" src="img/footer-sova.png" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="large">Akce je pořádána pod záštitou <a href="http://www.instruktori.cz">Instruktorů Brno</a>.</p>
+            <p>Založeno na motivu <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+    <!-- Paralax -->
+    <script>
+        (function(){
+            var parallax = document.querySelectorAll("body"),
+                speed = -0.1;
+
+            window.onscroll = function(){
+            [].slice.call(parallax).forEach(function(el,i){
+
+                var windowYOffset = window.pageYOffset,
+                    elBackgrounPos = "50% " + (windowYOffset * speed) + "px" + "100vh";
+
+                el.style.backgroundPosition = elBackgrounPos;
+
+            });
+            };
+
+            })();
+    </script>
+
+    <!-- Years -->
+    <script>
+        $.getJSON('/years.json', function(data) {
+            $('#years').html('');
+            for (var name in data) {
+                $('#years').append('<a class="dropdown-item" href="' + data[name] + '">' + name + '</a>')
+            }
+        });
+    </script>
+
+</body>
+
+</html>
